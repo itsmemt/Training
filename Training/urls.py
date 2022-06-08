@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.urls import path,include
 from django.contrib import admin
+from Training.settings import STATIC_DIR, STATICFILES_DIRS
 from exam import views
 from django.contrib.auth.views import LogoutView,LoginView
 
@@ -48,4 +49,4 @@ urlpatterns = [
     path('delete-question/<int:pk>', views.delete_question_view,name='delete-question'),
 
 
-]
+] + STATICFILES_DIRS(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
