@@ -1,5 +1,5 @@
 """
-WSGI config for onlinexam project.
+WSGI config for Training project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
