@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "exam/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4">Hello Student,</h1>
+    <p class="lead text-center">and Welcome to Our Online Mock Test System</p>
+    <hr class="my-4">
+    <p class="text-center">If you are New to this Website then First Register yourself.Then you can Login.</p>
+    <p class="lead text-center mt-5 ">
+      <a class="btn btn-primary" href="studentsignup" style="border-radius: 0%;" role="button">Create Your Account</a>
+      <a class="btn btn-success " href="studentlogin" style="border-radius: 0%;" role="button">Login Now</a>
+    </p>
+  </div>
+ 
+  {% include "exam/footer.html" %}
+</body>
+
+</html>
