@@ -49,5 +49,4 @@ urlpatterns = [
     path('delete-question/<int:pk>', views.delete_question_view,name='delete-question'),
 
 
-] 
-urlpatterns= urlpatterns + STATIC_ROOT(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + STATIC_ROOT(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
