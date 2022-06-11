@@ -16,16 +16,16 @@
 }
 
 .box {
-    width: 500px;
+    width: 70vw;
     padding: 40px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 15%;
     background: #212529;
     border-radius: 15px;
     text-align: center;
     transition: 0.25s;
-    margin-top: 100px
+    margin-top: 100px;
 }
 
 .box input[type="text"],
@@ -85,7 +85,7 @@
             <div class="card">
                 <form class="box" method="post">
                     {% csrf_token %}
-                    <h1>Student Login Panel</h1>
+                    <h1>Student Login</h1>
 
                      {% render_field form.username class="form-control" autocomplete="off" placeholder="Username" %}
                      {% render_field form.password class="form-control" autocomplete="off" placeholder="Password" %}
@@ -98,8 +98,8 @@
     </div>
 </div>
 <br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br> <br> <br>
+
 {% include "exam/footer.html" %}
   </body>
 </html>

@@ -11,18 +11,56 @@
 </style>
 <body>
   {% include "exam/navbar.html" %}
-  <br>
+  <br> <br> <br>
+
+  <div class="row">
+    <div class="col-md-12" style=" background-position: center;
+        width: 100%;
+        height: 130vh;
+    background-image: linear-gradient(
+ rgba(5,0,136,0.5),rgba(5,0,136,0.5)),
+ url(/static/home/images/bg1.jpg);
+    background-size: cover;
+    overflow: hidden; border: 4px yellow solid;border-radius: 15px;">
+        <div class="row">
+            <div class="col-md-6" style="   margin-top: 5%;
+                margin-left: 8%;
+                color:white;">
+                <h1 style="font-size: 6vw;
+                line-height: 5vw;
+                font-weight: 600;
+                color: bisque;">Welcome  to <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Placeopedia</h1>
+                <br>
+                <br>
+                
+            </div>
+            <div class="col-md-6" >
+                <center>
+                <p style=" max-width: 50rem;
+                line-height: 2rem; color: white;">This is the Training Section of our Placement Cell website of Institute
+                    of Informatics and Communication(IIC).Here we have
+                Mock Test for our registered students.
+                </p>
+                <h3 style="color:yellow; text-decoration: underline;">Student Section</h3>
+                <p> # We have student sections particularly for our Students.Where he/she can Register themselves and can
+                    login.</p>
+                <h3 style="color: yellow; text-decoration: underline;">Training Section</h3>
+                <p># We have Training sections particularly for our Students.Where you can learn new technologies
+                    and evaluate yourself attempting some mock test designed for you.</p>
+                </center>
+            </div>
+        </div>
+    </div>
+
+</div>
 <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
   <div class="container text-center">
-    <h2 class="display-3 text-info">Online Mock Test System</h2>
-    <p class="display-4 d-none d-sm-block">Give your Mock test online!</p>
+    <h2 class="display-3 text-info">Give your Mock test online!</h2>
     <p class="lead">Sign Up now to start your first online Mock test</p>
 
   
     <p><strong> Start Your Journey Here:</strong></p>
     <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as Student</a>
-    
-    
   </div>  
 </section>
   {% include "exam/footer.html" %}

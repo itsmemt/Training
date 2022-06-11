@@ -4,7 +4,15 @@
   <head>
     <meta charset="utf-8">
     <style>
+         body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #304352;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+}
         form{
            margin: 50px; 
           
@@ -17,12 +25,12 @@
  
 
 
-<br><br><br>
+<br><br><br> <br><br><br>
 <div class="container">
   <h3 style="text-align: center;">Student Signup Form</h3>
 <form method="POST" autocomplete="off" enctype="multipart/form-data">
     {% csrf_token %}
-
+  
     <div class="form-row">
         <div class="form-group col-md-6">
           <label for="first_name">First Name</label>
@@ -55,14 +63,14 @@
           {% render_field userForm.password|attr:'required:true'  class="form-control" placeholder="password" %}
         </div>
       </div>
-
+<!-- 
       <div class="form-row">
         <div class="form-group col-md-12">
           <label for="profile_pic">Profile Picture</label>
           {% render_field studentForm.profile_pic|attr:'required:true' class="form-control" placeholder="" %}
         </div>
         
-      </div>
+      </div> -->
 
 
     <button type="submit" class="btn btn-success" style="border-radius: 0%;">Sign Up</button>
