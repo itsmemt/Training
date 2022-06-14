@@ -15,7 +15,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 SECRET_KEY = '@k0#p3kidu)yaaa3u1hplxz)f@^6xiy384*(+n@@s5x#1bx@m5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG =False
 
 ALLOWED_HOSTS = ["127.0.0.1","localhost","placeopedia-training.herokuapp.com"]
 
@@ -47,6 +47,7 @@ MIDDLEWARE = [
 ]
 CSRF_COOKIE_SECURE=True
 SESSION_COOKIE_SECURE=True
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 TEMPLATES = [

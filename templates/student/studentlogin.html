@@ -6,6 +6,7 @@
     <title></title>
     <style media="screen">
       body {
+       
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -37,7 +38,7 @@
     text-align: center;
     border: 2px solid #838383;
     padding: 10px 10px;
-    width: 250px;
+    width: 30vw;
     outline: none;
     color: white;
     border-radius: 0px;
@@ -52,13 +53,13 @@
 
 .box input[type="text"]:focus,
 .box input[type="password"]:focus {
-    width: 300px;
+    width: 50vw;
     border-color:#4caf50;
 }
 
 .box input[type="submit"] {
     border: 0;
-    background: #4caf50;
+    background: blue;
     display: block;
     margin: 20px auto;
     text-align: center;
@@ -81,7 +82,7 @@
     {% include "exam/navbar.html" %}
     <div class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" >
             <div class="card">
                 <form class="box" method="post">
                     {% csrf_token %}

@@ -42,7 +42,7 @@
             text-align: center;
             border: 2px solid #838383;
             padding: 10px 10px;
-            width: 50vw;
+            width: 20vh;
             outline: none;
             color: white;
             border-radius: 5px;
@@ -56,13 +56,13 @@
 
         .box input[type="text"]:focus,
         .box input[type="password"]:focus {
-            width: 300px;
+            width: 50vw;
             border-color: #4caf50;
         }
 
         .box input[type="submit"] {
             border: 0;
-            background: #4caf50;
+            background: blue;
             display: block;
             margin: 20px auto;
             text-align: center;
@@ -76,16 +76,17 @@
         }
 
         .box input[type="submit"]:hover {
-            background: #347736;
+            background:green;
         }
     </style>
 </head>
 
 <body>
     {% include "exam/navbar.html" %}
-        <!-- <div class="row">
-            <div class="col-md-12"> -->
+        <div class="row">
+            <div class="col-md-12"> 
                 <div class="card">
+                   <center>
                     <form class="box" method="post">
                         {% csrf_token %}
                         <h1>Admin Login </h1>
@@ -96,9 +97,10 @@
                         <input type="submit" name="" value=" Login">
 
                     </form>
+                   </center>
                 </div>
-            <!-- </div>
-        </div> -->
+             </div>
+        </div> 
 
     <br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br>
