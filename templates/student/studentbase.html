@@ -134,7 +134,7 @@
 
     .content {
       margin-left: 250px;
-      background: url(background.png) no-repeat;
+      background: url(bg1.jpg) no-repeat;
       background-position: center;
       background-size: cover;
       height: 100vh;
@@ -175,10 +175,13 @@
   <!--sidebar start-->
   <div class="sidebar">
     <center>
-
-      <img src="{% static "image/student.png" %}" class="profile_image" alt="">
-      <h4>{{request.user.first_name}}</h4>
-      <h6 style="color: rgb(255, 255, 255);">( Student )</h6>
+<!-- 
+      <img src="{% static 'image/student.png' %}" class="profile_image" alt=""> -->
+      <h5 style="color: rgb(255, 255, 255); margin-top: 20px;"><i class="fas fa-user"></i> Student </h5>
+      <h4>>> {{request.user.first_name}}</h4>
+      <hr>
+      
+   
 
     </center>
 

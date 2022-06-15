@@ -137,7 +137,7 @@
 
     .content {
       margin-left: 250px;
-      background: url(background.png) no-repeat;
+      background: url(bg1.jpg) no-repeat;
       background-position: center;
       background-size: cover;
       height: 100vh;
@@ -159,7 +159,7 @@
 
 </head>
 
-<body>
+<body style="background-color: white;">
 
   <input type="checkbox" id="check">
   <!--header area start-->
@@ -179,8 +179,9 @@
   <div class="sidebar">
     <center>
 
-      <img src="{% static "image/admin.png" %}" class="profile_image" alt="">
-      <h4>Admin</h4>
+      <!-- <img src="{% static 'image/admin.png' %}" class="profile_image" alt=""> -->
+      <h4 style="margin-top: 25px;"><i class="fas fa-user"></i> Admin</h4>
+      <hr>
 
     </center>
 
