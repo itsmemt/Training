@@ -7,7 +7,10 @@ from django.contrib.auth.views import LogoutView,LoginView
 from django.views.static import serve
 from django.conf.urls import url
 urlpatterns = [
-
+      # For Deployment
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root':settings.STATIC_ROOT}), 
+    
     path('admin/', admin.site.urls),
     path('student/',include('student.urls')),
 
@@ -44,9 +47,7 @@ urlpatterns = [
     path('view-question/<int:pk>', views.view_question_view,name='view-question'),
     path('delete-question/<int:pk>', views.delete_question_view,name='delete-question'),
 
-   # For Deployment
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':settings.MEDIA_ROOT}), 
-    url(r'^static/(?P<path>.*)$', serve,{'document_root':settings.STATIC_ROOT}), 
+ 
     
 
 ]
