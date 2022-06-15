@@ -135,14 +135,14 @@
       width: 80px;
     }
 
-    .content {
+    /* .content {
       margin-left: 250px;
       background: url(bg1.jpg) no-repeat;
       background-position: center;
       background-size: cover;
       height: 100vh;
       transition: 0.5s;
-    }
+    } */
 
     #check:checked~.content {
       margin-left: 60px;
@@ -179,14 +179,14 @@
   <div class="sidebar">
     <center>
 
-      <!-- <img src="{% static 'image/admin.png' %}" class="profile_image" alt=""> -->
+      <img src="{% static 'image/admin.png' %}" class="profile_image" alt="">
       <h4 style="margin-top: 25px;"><i class="fas fa-user"></i> Admin</h4>
       <hr>
 
     </center>
 
     <a href="/admin-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
-    <!-- <a href="/admin-teacher"><i class="fas fa-chalkboard-teacher"></i><span>Teacher Section</span></a> -->
+  
     <a href="/admin-student"><i class="fas fa-user-graduate"></i><span>Student Section</span></a>
     <a href="/admin-course"><i class="fas fa-book"></i><span>Manage Courses</span></a>
     <a href="/admin-question"><i class="fas fa-question-circle"></i><span>Manage Questions</span></a>
