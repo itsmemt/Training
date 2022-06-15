@@ -5,65 +5,79 @@
 <html lang="en" dir="ltr">
 
 <style>
-  .jumbotron{
+  .jumbotron {
     margin-bottom: 0px;
   }
+
+  .index {
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)),
+      url(/static/image/bg1.jpg);
+    background-size: cover;
+    overflow: hidden;
+    border: 4px yellow solid;
+    border-radius: 15px;
+  }
 </style>
+
 <body>
   {% include "exam/navbar.html" %}
   <br> <br> <br>
 
   <div class="row">
-    <div class="col-md-12" style=" background-position: center;
-        width: 100%;
-        height: 100%;
-        background-color: slategray;
-        border: 4px yellow solid;
-  ">
-        <div class="row">
-          <br><br>
-            <div class="col-md-5" style="   margin-top: 8%;
+    <div class="col-md-12" class="index">
+      <div class="row">
+        <br><br>
+        <div class="col-md-5" style="   margin-top: 8%;
               
                 color:white;">
-                <h1 style="font-size: 2.5rem;
+          <h1 style="font-size: 2.5rem;
                 line-height: 5vh;
                 font-weight: 600;
-                color: bisque; text-align: center;">Welcome <br> <br> to <br> <br>Training Section <br> <br>of <br><br> Placeopedia</h1>
-                <br><br>
-             
-                
-            </div>
-            <div class="col-md-6"  style="margin-top: 8%; margin-bottom: 4%;">
-        
-              <p style="
-              line-height: 1.5rem; color: wheat;" class="text-center">We welcome you to our Training Section of our Placement Cell website of Institute
-                  of Informatics and Communication(IIC).Here we have designed some
-              Mock Test for your practice.
-              </p>
-                <h3 class="text-center" style="color: yellow; text-decoration: underline;">Training Section</h3>
-                <p class="text-center"># We have Training sections particularly for our Students.Where you can learn new technologies
-                    and evaluate yourself attempting some mock test designed for you.</p>
-                <h3 class="text-center" style="color:yellow; text-decoration: underline;">Student Section</h3>
-                <p class="text-center"> # We have student sections particularly for our Students.Where he/she can Register themselves and can
-                    login.</p>
-                
-                
-            </div>
+                color: bisque; text-align: center;">Welcome <br> <br> to <br> <br>Training Section <br> <br>of <br><br>
+            Placeopedia</h1>
+          <br><br>
+
+
         </div>
+        <div class="col-md-6" style="margin-top: 8%; margin-bottom: 4%;">
+
+          <p style="
+              line-height: 1.5rem; color: wheat;" class="text-center">We welcome you to our Training Section of our
+            Placement Cell website of Institute
+            of Informatics and Communication(IIC).Here we have designed some
+            Mock Test for your practice.
+          </p>
+          <h3 class="text-center" style="color: yellow; text-decoration: underline;">Training Section</h3>
+          <p class="text-center"># We have Training sections particularly for our Students.Where you can learn new
+            technologies
+            and evaluate yourself attempting some mock test designed for you.</p>
+          <h3 class="text-center" style="color:yellow; text-decoration: underline;">Student Section</h3>
+          <p class="text-center"> # We have student sections particularly for our Students.Where he/she can Register
+            themselves and can
+            login.</p>
+
+
+        </div>
+      </div>
     </div>
 
-</div>
-<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center" style="background-color: slategrey;">
-  <div class="container text-center">
-    <h2 class="display-3" style="color: yellow;">Give your Mock test online!</h2>
-    <p style="color: black; text-decoration: underline;">Sign Up now to start your first online Mock test</p>
+  </div>
+  <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center"
+    style="background-color: slategrey;">
+    <div class="container text-center">
+      <h2 class="display-3" style="color: yellow;">Give your Mock test online!</h2>
+      <p style="color: black; text-decoration: underline;">Sign Up now to start your first online Mock test</p>
 
-  
-    <p><strong style="text-decoration:underline ; color:white;"> Start Your Journey Here:</strong></p>
-    <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 5%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as Student</a>
-  </div> 
-   
-</section>
+
+      <p><strong style="text-decoration:underline ; color:white;"> Start Your Journey Here:</strong></p>
+      <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 5%;"><i
+          class="fa fa-graduation-cap" aria-hidden="true"></i> Sign Up as Student</a>
+    </div>
+
+  </section>
   {% include "exam/footer.html" %}
 </body>
 
